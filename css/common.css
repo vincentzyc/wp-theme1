@@ -1,0 +1,123 @@
+body {
+	background-color: #f6f6f6;
+}
+ul,li{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #333;
+	cursor: pointer;
+}
+a:hover,a:focus {
+	color: #FF6A00;
+}
+h1,h2,h3,h4,h5{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+button,button:focus {
+	outline: #FF6A00 !important;
+}
+.input-group input {
+	border-color: #FF6A00;
+	box-shadow: 0 0 5px rgba(255, 106, 0, 0.4);
+}
+.input-group input:focus,.form-group input:focus,.form-group textarea:focus {
+	border-color: #FF6A00;
+	box-shadow: 0 0 5px rgba(255, 106, 0, 0.4);
+}
+/*header   index*/
+.btn-bg{
+	background: #FF6A00;
+	color: #EEEEEE;
+}
+.btn-bg:hover{
+	color: #FFFFFF;
+}
+/*index blog singleblog*/
+.more {
+	color: #FF6A00;
+	line-height: 33px;
+	font-size: 14px;
+	font-weight: normal;
+	animation: fadeRight 2s;
+}
+/*product blog*/
+.pagination>li>a{
+    color: #FF6A00;
+}
+.pagination>li>a:hover{
+    color: #FF6A00;
+}
+.pagination>.active>a{
+	background-color: #FF6A00 !important;
+    border-color: #FF6A00 !important;
+}
+.post-meta {
+	margin: 10px 0;
+    padding-bottom: 8px;
+    color: #666;
+    overflow: hidden;
+}
+.post-meta span {
+    padding: 2px 20px 2px 20px;
+    background: url(../img/icon-blog.png) no-repeat 5px 6px;
+}
+.post-meta span a{
+   color: #666;
+}
+.post-meta span.date {
+    background-position: 0 -86px;
+}
+.post-meta span.comments {
+    background-position: 0 -120px;
+}
+ .post-meta span.author {
+    background-position: 0 -154px;
+}
+.post-meta span.cat {
+    background-position: 0 -187px;
+}
+@keyframes fadeTop {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeUp {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes fadeRight {
+	0% {
+		opacity: 0;
+		transform: translateX(80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

@@ -1,0 +1,134 @@
+@media (max-width: 767px) {
+	#main .customer #roll .itemroll img {
+		width: 150px;
+		height: 100px;
+	}
+	#main #maintabs {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	#main .customer #roll .itemroll img {
+		width: 227.5px;
+		height: 110px;
+	}
+	#main #mtabs {
+		display: none;
+	}
+}
+@media (min-width: 992px) {
+	#main .customer #roll .itemroll img {
+		width: 220px;
+		height: 110px;
+	}
+}
+@media (min-width: 1200px) {
+	#main .customer #roll .itemroll img {
+		width: 213.6px;
+		height: 105px;
+	}
+}
+#main .slideimg {
+	margin-bottom: 30px;
+}
+#main .commonstyle {
+	background: #FFFFFF;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border: 1px #E3E3E3 solid;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.05);
+}
+#main .commonstyle h2 {
+	margin-bottom: 25px;
+}
+#main .commonstyle .iconText {
+	text-align: center;
+	padding: 20px 15px;
+	animation: fadeUp 2s;
+}
+#main .commonstyle .iconText:hover h4 {
+	color: #FF6A00;
+}
+#main .commonstyle .iconText img {
+	padding: 20px;
+	width: 120px;
+	height: 120px;
+}
+#main .commonstyle .iconText:hover img {
+	animation: fadeUp 0.3s;
+}
+#main .grid .grid-inner {
+	margin: 30px 0;
+}
+#main .grid .grid-inner .grid-item {
+	background: #fff;
+	border: 1px solid #dcdee3;
+	margin-bottom: 30px;
+	text-align: center;
+}
+#main .grid .grid-inner .grid-item h5 > a {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+#main .grid .grid-inner .grid-item img {
+	width: 100%;
+	max-width: 252px;
+}
+#main .grid .grid-inner .grid-item img:hover {
+	opacity: 0.7;
+}
+#main .sectionTab .sectionAll > :not(:first-child) {
+	display: none;
+}
+.nav-tabs.nav-justified > li > a:hover {
+	background: #fff;
+}
+.nav-tabs.nav-justified > li > a > h4 {
+	white-space: nowrap;
+}
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
+	color: #FF6A00;
+}
+#main .sectionTab .sectionAll,#main .about-us .about-tip {
+	padding: 20px;
+}
+#main #mtabs .panel-heading {
+	padding: 15px;
+}
+#main .slideimg img,#main .sectionTab .sectionAll img,#main #mtabs img,#main .about-us img,#main .blogfaqs img {
+	width: 100%;
+}
+#main .sectionTab .sectionAll .guide-tip ul,#main #mtabs .guide-tip ul {
+	list-style: decimal;
+	padding-left: 20px;
+}
+#main .sectionTab .sectionAll .guide-tip ul li,#main #mtabs .guide-tip ul li {
+	list-style: decimal;
+	line-height: 30px;
+}
+#main .blogfaqs .blog p {
+	line-height: 24px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+#main .rollbox {
+	overflow: hidden;
+	position: relative;
+	margin: 10px;
+}
+#main .customer #roll {
+	margin: 0 auto;
+}
+#main .customer #roll .itemroll {
+	border: 1px #E3E3E3 solid;
+	float: left;
+	margin-right: 20px;
+}
+#main .customer {
+	padding-bottom: 20px;
+}

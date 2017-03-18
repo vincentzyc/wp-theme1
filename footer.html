@@ -1,0 +1,121 @@
+<!--底部-->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+			<h4>Customer Services</h4>
+			<ul>
+				<li>
+					<a href="#">Help Center</a>
+				</li>
+				<li>
+					<a href="#">Contact Us</a>
+				</li>
+				<li>
+					<a href="#">Report Abuse</a>
+				</li>
+				<li>
+					<a href="#">Submit a Dispute</a>
+				</li>
+				<li>
+					<a href="#">Submit a Dispute</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<h4>Customer Services</h4>
+			<ul>
+				<li>
+					<a href="#">Help Center</a>
+				</li>
+				<li>
+					<a href="#">Contact Us</a>
+				</li>
+				<li>
+					<a href="#">Report Abuse</a>
+				</li>
+				<li>
+					<a href="#">Submit a Dispute</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<h4>Customer Services</h4>
+			<ul>
+				<li>
+					<a href="#">Help Center</a>
+				</li>
+				<li>
+					<a href="#">Contact Us</a>
+				</li>
+				<li>
+					<a href="#">Report Abuse</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<h4>Customer Services</h4>
+			<ul>
+				<li>
+					<a href="#">Help Center</a>
+				</li>
+				<li>
+					<a href="#">Contact Us</a>
+				</li>
+				<li>
+					<a href="#">Report Abuse</a>
+				</li>
+				<li>
+					<a href="#">Submit a Dispute</a>
+				</li>
+				<li>
+					<a href="#">Report Abuse</a>
+				</li>
+				<li>
+					<a href="#">Submit a Dispute</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row copyright text-center">
+		<h5>Copyright © 2017 DIYzhan.CN</h5>
+	</div>
+</div>
+<!--小屏底部导航-->
+<nav class="navbar navbar-default navbar-fixed-bottom" id="mobile-bar">
+	<ul class="nav">
+		<li class="active">
+			<a href="tel:110">Tel</a>
+		</li>
+		<li>
+			<a href="mailto:89503511@qq.com">E-mail</a>
+		</li>
+		<li>
+			<a href="http://map.baidu.com/">Address</a>
+		</li>
+		<li>
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=89503511&site=wpyou.com&menu=yes">Chat</a>
+		</li>
+	</ul>
+</nav>
+<!--小屏底部导航end-->
+
+<div class="backToTop"></div>
+
+<!--底部end-->
+
+<script type="text/javascript">
+	$(function() {
+		//返回顶部
+		$(window).scroll(function() {
+			var sTop = $(document).scrollTop();
+			if(sTop > 200) {
+				$('.backToTop').fadeIn();
+			} else {
+				$('.backToTop').fadeOut();
+			}
+		});
+		$('.backToTop').on('click',function(){
+			$('body').animate({scrollTop:0},300);
+		});
+	});
+</script>

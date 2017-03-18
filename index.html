@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>test-theme</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body>
+		<header id="header"></header>
+		<!--主体内容-->
+		<div id="main" class="container">
+			<div class="row slideimg">
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+					</ol>
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/banner.jpg" alt="First slide">
+						</div>
+						<div class="item">
+							<img src="img/banner02.jpg" alt="Second slide">
+						</div>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;
+					</a>
+					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;
+					</a>
+				</div>
+			</div>
+
+			<div class="row commonstyle">
+				<div class="col-sm-3 col-xs-12 iconText">
+					<a href="/about-us" target="_blank"><img src="http://en.wpyou.com/wp-content/themes/WPGroup-Red-en/images/responsive.png" alt="" class=""></a>
+					<h4>GLOBAL BUSINESS</h4>
+					<p>We offer our customers from around the world to maintain a very good communication and product support services.</p>
+				</div>
+				<div class="col-sm-3 col-xs-12 iconText">
+					<a href="/contact-us" target="_blank"><img src="http://en.wpyou.com/wp-content/themes/WPGroup-Red-en/images/expert.png" alt="" class=""></a>
+					<h4>EFFICIENT LOGISTICS</h4>
+					<p>Our long-term cooperation with the world's leading logistics and express companies, can ensure that the goods delivered in the shortest time.</p>
+				</div>
+				<div class="col-sm-3 col-xs-12 iconText">
+					<a href="/contact-us" target="_blank"><img src="http://en.wpyou.com/wp-content/themes/WPGroup-Red-en/images/grow.png" alt="" class=""></a>
+					<h4>SECURE TRANSACTION</h4>
+					<p>Our services are on a global scale, to help you grow exponentially in local and foreign markets for maximum conversions.</p>
+				</div>
+				<div class="col-sm-3 col-xs-12 iconText">
+					<a href="/contact-us" target="_blank"><img src="http://en.wpyou.com/wp-content/themes/WPGroup-Red-en/images/service.png" alt="" class=""></a>
+					<h4>Best Results</h4>
+					<p>We track and monitor statistics on an hourly basis. This means we can quickly analyze and adjust campaigns for optimizations.</p>
+				</div>
+			</div>
+
+			<div class="row grid commonstyle">
+				<h2 class="text-center">Discover Products & Suppliers</h2>
+				<div class="grid-inner">
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="grid-item">
+							<a><img src="img/ipad300x300.jpg" /></a>
+							<h5><a>Apple’s 9.7-inch iPad Pro White 128G</a></h5>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="grid-item">
+							<a><img src="img/0009450G9.jpg" /></a>
+							<h5><a>Smart Bluetooth Bracelet for iPhone Samsung Android</a></h5>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="grid-item">
+							<a><img src="img/0009450G9.jpg" /></a>
+							<h5><a>Smart Bluetooth Bracelet for iPhone Samsung Android</a></h5>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="grid-item">
+							<a><img src="img/0009450G9.jpg" /></a>
+							<h5><a>Smart Bluetooth Bracelet for iPhone Samsung Android</a></h5>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="grid-item">
+							<a><img src="img/ipad300x300.jpg" /></a>
+							<h5><a>Apple’s 9.7-inch iPad Pro White 128G</a></h5>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="grid-item">
+							<a><img src="img/ipad300x300.jpg" /></a>
+							<h5><a>Apple’s 9.7-inch iPad Pro White 128G</a></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row sectionTab commonstyle" id="maintabs">
+				<h2 class="text-center">Manage Orders Online</h2>
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active">
+						<a onclick="changeTab(this)">
+							<h4>Messages</h4></a>
+					</li>
+					<li>
+						<a onclick="changeTab(this)">
+							<h4>Order Confirmation</h4></a>
+					</li>
+					<li>
+						<a onclick="changeTab(this)">
+							<h4>Payment</h4></a>
+					</li>
+					<li>
+						<a onclick="changeTab(this)">
+							<h4>Shipping</h4></a>
+					</li>
+					<li>
+						<a onclick="changeTab(this)">
+							<h4>Completed</h4></a>
+					</li>
+				</ul>
+				<div class="sectionAll">
+					<div id="section1">
+						<div class="col-sm-8">
+							<img src="http://gtms03.alicdn.com/tps/i3/TB1DQmqLpXXXXa5XXXXetiu_VXX-770-453.png" />
+						</div>
+						<div class="col-sm-4 guide-tip">
+							<h4>Your one-stop communication tool!</h4>
+							<ul>
+								<li>View messages from buyers & suppliers</li>
+								<li>Negotiate the details of your order</li>
+							</ul>
+						</div>
+					</div>
+					<div id="section2">
+						<div class="col-sm-8">
+							<img src="http://img.alicdn.com/tps/TB1_6qeLpXXXXb8XXXXXXXXXXXX-770-453.png" />
+						</div>
+						<div class="col-sm-4 guide-tip">
+							<h4>Confirm your orders with confidence!</h4>
+							<ul>
+								<li>View messages from buyers & suppliers</li>
+								<li>Negotiate the details of your order</li>
+							</ul>
+						</div>
+					</div>
+					<div id="section3">
+						<div class="col-sm-8">
+							<img src="http://gtms03.alicdn.com/tps/i3/TB1DQmqLpXXXXa5XXXXetiu_VXX-770-453.png" />
+						</div>
+						<div class="col-sm-4 guide-tip">
+							<h4>To get full payment protection</h4>
+							<ul>
+								<li>View messages from buyers & suppliers</li>
+								<li>Negotiate the details of your order</li>
+							</ul>
+						</div>
+					</div>
+					<div id="section4">
+						<div class="col-sm-8">
+							<img src="http://img.alicdn.com/tps/TB1_6qeLpXXXXb8XXXXXXXXXXXX-770-453.png" />
+						</div>
+						<div class="col-sm-4 guide-tip">
+							<h4>Never miss an update!</h4>
+							<ul>
+								<li>View messages from buyers & suppliers</li>
+								<li>Negotiate the details of your order</li>
+							</ul>
+						</div>
+					</div>
+					<div id="section5">
+						<div class="col-sm-8">
+							<img src="http://img.alicdn.com/tps/TB1kFd7LpXXXXX0XFXXXXXXXXXX-770-453.png" />
+						</div>
+						<div class="col-sm-4 guide-tip">
+							<h4>Your order has arrived!</h4>
+							<ul>
+								<li>View messages from buyers & suppliers</li>
+								<li>Negotiate the details of your order</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--手机端tab-->
+			<div class="row commonstyle panel-group" id="mtabs">
+				<h2 class="text-center">Manage Orders Online</h2>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title text-center">
+							<a data-toggle="collapse" data-parent="#mtabs" href="#mtabs1">
+								Messages
+							</a>
+						</h4>
+					</div>
+					<div id="mtabs1" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<img src="http://gtms03.alicdn.com/tps/i3/TB1DQmqLpXXXXa5XXXXetiu_VXX-770-453.png" />
+							<div class="guide-tip">
+								<h4>Your one-stop communication tool!</h4>
+								<ul>
+									<li>View messages from buyers & suppliers</li>
+									<li>Negotiate the details of your order</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title text-center">
+						<a data-toggle="collapse" data-parent="#mtabs" href="#mtabs2">
+							Shipping
+						</a>
+						</h4>
+					</div>
+					<div id="mtabs2" class="panel-collapse collapse">
+						<div class="panel-body">
+							<img src="http://img.alicdn.com/tps/TB1_6qeLpXXXXb8XXXXXXXXXXXX-770-453.png" />
+							<div class="guide-tip">
+								<h4>Confirm your orders with confidence!</h4>
+								<ul>
+									<li>View messages from buyers & suppliers</li>
+									<li>Negotiate the details of your order</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title text-center">
+							<a data-toggle="collapse" data-parent="#mtabs" href="#mtabs3">
+								Payment
+							</a>
+						</h4>
+					</div>
+					<div id="mtabs3" class="panel-collapse collapse">
+						<div class="panel-body">
+							<img src="http://gtms03.alicdn.com/tps/i3/TB1DQmqLpXXXXa5XXXXetiu_VXX-770-453.png" />
+							<div class="guide-tip">
+								<h4>To get full payment protection</h4>
+								<ul>
+									<li>View messages from buyers & suppliers</li>
+									<li>Negotiate the details of your order</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title text-center">
+							<a data-toggle="collapse" data-parent="#mtabs" href="#mtabs4">
+								Completed
+							</a>
+						</h4>
+					</div>
+					<div id="mtabs4" class="panel-collapse collapse">
+						<div class="panel-body">
+							<img src="http://img.alicdn.com/tps/TB1_6qeLpXXXXb8XXXXXXXXXXXX-770-453.png" />
+							<div class="guide-tip">
+								<h4>Never miss an update!</h4>
+								<ul>
+									<li>View messages from buyers & suppliers</li>
+									<li>Negotiate the details of your order</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--手机端tab end-->
+			<div class="row about-us commonstyle">
+				<h2 class="text-center">ABOUT US</h2>
+				<div class="col-sm-6 col-xs-12">
+					<img src="img/about-us.jpg" />
+				</div>
+				<div class="col-sm-6 col-xs-12 about-tip">
+					<p>Our technology creates maximum value for our customers by enriching people’s lives through communication. Huawei solutions have been deployed by 45 of the world’s top 50 telecom operators.</p>
+					<p>We can only earn customers'respect and trust through continuous dedication and hard work. Therefore, we have insisted on customer centricity, creating long-term values and bringing customers success.</p>
+					<p>Our technology creates maximum value for our customers by enriching people’s lives through communication. Huawei solutions have been deployed by 45 of the world’s top 50 telecom operators.</p>
+					<p>Our technology creates maximum value for our customers by enriching people’s lives through communication. Huawei solutions have been deployed by 45 of the world’s top 50 telecom operators.</p>
+				</div>
+			</div>
+
+			<div class="row blogfaqs commonstyle">
+				<div class="col-sm-6 col-xs-12">
+					<h2>BLOG<a class="pull-right more">More...</a></h2>
+					<div class="row blog">
+						<div class="col-xs-12">
+							<h4><a href="javascript:">Our technology</a></h4>
+							<p>Our technology creates maximum value for our customers by enriching people’s lives through communication. Huawei solutions have been deployed by 45 of the world’s top 50 telecom operators.</p>
+							<div class="post-meta">
+								<span class="date">2017-03-20 00:00:00</span>
+								<span class="author">admin</span>
+							</div>
+						</div>
+					</div>
+					<div class="row blog">
+						<div class="col-sm-4 col-xs-6">
+							<img src="img/ipad300x300.jpg" />
+						</div>
+						<div class="col-sm-8 col-xs-6">
+							<h4>Our technology</h4>
+							<p>Our technology creates maximum value for our customers by enriching people’s lives through communication. Huawei solutions have been deployed by 45 of the world’s top 50 telecom operators.</p>
+							<div class="post-meta">
+								<span class="date">2017-03-20 00:00:00</span>
+								<span class="author"><a href="#" >admin</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<h2>FAQS<a class="pull-right more">More...</a></h2>
+					<div class="panel-group" id="faqs">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#faqs" href="#faqs1">
+										Will there be formal training?
+									</a>
+								</h4>
+							</div>
+							<div id="faqs1" class="panel-collapse collapse in">
+								<div class="panel-body">
+									We are committed to the continuous personal development of all employees. This starts on day one with a formal induction, and within a few weeks of joining ARM you will agree with your manager what your next steps are for development, and naturally this varies from role to role and employee to employee.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#faqs" href="#faqs2">
+										When will I hear if my application is successful?
+									</a>
+								</h4>
+							</div>
+							<div id="faqs2" class="panel-collapse collapse">
+								<div class="panel-body">
+									We are grateful that we receive a lot of interest in our vacancies from around the world. This does present us with an extremely high volume of applications. We do not want to keep you waiting and will get back to you as soon as possible, but please feel free to get in touch regarding your application
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#faqs" href="#faqs3">
+										How do I search for wines using the app?
+									</a>
+								</h4>
+							</div>
+							<div id="faqs3" class="panel-collapse collapse">
+								<div class="panel-body">
+									Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#faqs" href="#faqs4">
+										What audio conferencing is supported?
+									</a>
+								</h4>
+							</div>
+							<div id="faqs4" class="panel-collapse collapse">
+								<div class="panel-body">
+									Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row customer commonstyle">
+				<h2 class="text-center">OUR CUSTOMER</h2>
+				<div class="rollbox">
+					<div id="roll">
+						<div class="itemroll">
+							<img src="img/ipad300x300.jpg" />
+						</div>
+						<div class="itemroll">
+							<img src="img/client-04.jpg" />
+						</div>
+						<div class="itemroll">
+							<img src="img/client-01.jpg" />
+						</div>
+
+					</div>
+					<a class="carousel-control left prev">&lsaquo;</a>
+					<a class="carousel-control right next">&rsaquo;</a>
+				</div>
+			</div>
+
+			<div class="text-center">
+				<h4>Trade Alert - Delivering the latest product trends and industry news straight to your inbox.</h4>
+				<div class="input-group input-group-lg col-sm-6 col-sm-push-3 col-xs-12">
+					<input type="text" class="form-control" placeholder="Your Email">
+					<span class="input-group-btn"><button class="btn btn-bg" type="button">Subscribe</button></span>
+				</div>
+				<h5 class="text-muted">We’ll never share your email address with a third-party.</h5>
+			</div>
+
+		</div>
+		<!--主体内容end-->
+		<footer id="footer"></footer>
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+				//页面主体元素的加载动画
+				allAnimation.Animation('.grid-item', 'fadeUp');
+				allAnimation.Animation('#main .about-us img,#faqs .panel,#mtabs .panel', 'fadeUp');
+				allAnimation.Animation('#main .sectionTab .sectionAll img', 'fadeLeft');
+				allAnimation.Animation('#main .sectionTab .sectionAll .guide-tip,.more', 'fadeRight');
+				//调用小图滚动插件
+				$("#roll").parallelRoll();
+				//首页轮播
+				$('#myCarousel').carousel();
+			});
+		</script>
+	</body>
+</html>

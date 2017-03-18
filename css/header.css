@@ -1,0 +1,136 @@
+/*固定导航条优化*/
+header{
+	background: #FFFFFF;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 4px 5px rgba(0,0,0,0.05);
+}
+.header-fixed {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: #FFFFFF;
+  animation: fadeTop 1s;
+}
+.hsticky{
+	position: relative;
+	z-index: 1030;
+	background: #FFFFFF;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 4px 5px rgba(0,0,0,0.05);
+}
+.issticky{
+	height: 100px;
+	width: 100%;
+}
+/*固定导航条优化end*/
+.header-fixed .rowmain,.header-fixed .rowmain ul.navbar-nav>li>a{
+	line-height: 60px;
+}
+header .container .main-menu ul,header .container .main-menu>a,header .rowtop .container span{
+	display:none;
+}
+/*手机端图标边距优化*/
+header .container .main-menu .phoneview span {
+	font-size: 24px;
+	margin:0 15px;
+}
+header .container .main-menu .phoneview span:first-child {
+	margin-right:0;
+}
+/*手机端图标边距优化end*/
+@media (min-width: 769px) {
+	header .container .main-menu ul,header .container .main-menu>a,header .rowtop .container span{
+		display:block;
+	}
+	header .container .main-menu .phoneview{
+	    display:none;
+	}
+}
+header #mainlist {
+	border-top: 1px #FF6A00 solid;
+}
+header #mainlist ul.mymnav li{
+	line-height: 40px;
+	padding: 8px 0 8px 20px;
+	border-top: 1px solid #e6e6e6;
+}
+header #mainlist ul.mymnav li a{
+	width: 100%;
+	display: inline-block;
+}
+header #mainlist ul.mymnav li a>span{
+	float: right;
+	width: 60px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+header #mainlist ul.mymnav li ul.mymnav{
+	display: none;
+}
+header .rowmain ul.navbar-nav>li.active>a{
+	color: #FF6A00;
+}
+header .rowmain img,header .container .main-menu ul,header .container .main-menu a{
+	margin-left:20px;
+}
+header .rowtop{
+	line-height: 35px;
+	border-bottom:1px #eee solid ;
+}
+header .rowtop li{
+	list-style:none;
+	float: left;
+}
+header .rowmain{
+	line-height: 100px;
+}
+header .rowmain a{
+	color:#333;
+	padding: 0 20px;
+}
+header .container .main-menu>a{
+	float: left;
+}
+header .rowmain a:focus,header .rowmain a:hover,header .rowmain ul.dropdown-menu>li>a:hover,header .rowmain ul.dropdown-menu>li>a:focus{
+	color: #FF6A00;
+}
+header .rowmain ul.navbar-nav>li>a{
+	color:#333;
+	padding: 0 20px;
+	line-height: 100px;
+	font-weight: bold;
+}
+header .rowmain ul.navbar-nav>li>a:hover,header .rowmain ul.navbar-nav>li>a:focus{
+	background: #fff;
+	color:#FF6A00;
+}
+header .rowmain ul.dropdown-menu{
+	border-top: 1px #ff6a00 solid;
+	display: none;
+}
+header .rowmain ul.dropdown-menu li a{
+	color:#333;
+	margin-left: 0;
+	line-height: 40px;
+	padding-right: 50px;
+}
+header .rowmain ul.dropdown-menu li a span{
+	position: absolute;
+	right: 20px;
+}
+header .rowmain ul.dropdown-menu li ul.dropdown-menu{
+	position: absolute;
+	left: 100%;
+	top:initial;
+	margin-left: -1px;
+	margin-top: -40px;
+}
+header .search {
+	border-top: 1px #FF6A00 solid;
+}
+header .search .input-group{
+	padding: 20px;
+}

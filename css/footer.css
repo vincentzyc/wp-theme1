@@ -1,0 +1,61 @@
+@media (max-width: 768px) {
+	footer .container .copyright {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) {
+	#mobile-bar {
+		display: none;
+	}
+}
+#mobile-bar .nav > li > a:hover, .nav > li > a:focus {
+	background-color: #363636;
+	color: #FF6A00;
+}
+#mobile-bar {
+	background: #222;
+}
+#mobile-bar a {
+	color: #fff;
+}
+#mobile-bar ul li {
+	float: left;
+	width: 25%;
+	line-height: 30px;
+	text-align: center;
+	border-right: 1px #bbb solid;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#mobile-bar ul li:last-child {
+	border-right: none;
+}
+footer {
+	box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.08);
+	margin-top: 20px;
+	padding-top: 30px;
+}
+footer .container h4 {
+	margin-bottom: 20px;
+}
+footer .container .copyright {
+	margin-top: 10px;
+	padding: 20px 0;
+	border-top: 1px #E3E3E3 solid;
+}
+footer ul li {
+	min-height: 30px;
+}
+.backToTop {
+    width: 46px;
+    height: 44px;
+    background: #999 url(../img/backtop.gif) no-repeat 7px 11px;
+    position: fixed;
+    right: 20px;
+    bottom: 55px;
+    cursor: pointer;
+    display: none;
+    border-radius: 3px;
+    z-index: 9999;
+}

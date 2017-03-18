@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<style type="text/css">
+		ul, li {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		@media (min-width: 768px) {
+			#phone-bottom {
+				display: none !important;
+			}
+		}
+		#phone-bottom {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		}
+		#phone-bottom ul {
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			background: #f9f9f9;
+		}
+		#phone-bottom ul li {
+			position: relative;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex: 1;
+			border-right: 1px #e3e3e3 solid;
+		}
+		#phone-bottom ul li a {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-size: 16px;
+			text-decoration: none;
+			color: #333;
+			min-width: 40px;
+			line-height: 45px;
+			padding: 0 10px;
+			width: 100%;
+			text-align: center;
+		}
+		#phone-bottom ul li a:active{
+			background-color: #eee;
+		}
+		#phone-bottom ul li:last-child, #phone-bottom ul li ul li {
+			border-right: none;
+		}
+		#phone-bottom ul li ul li{
+			border-bottom: 1px #e3e3e3 solid;
+		}
+		#phone-bottom ul li ul {
+			position: absolute;
+			bottom: 45px;
+			left: 50%;
+			flex-direction: column-reverse;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			display: none;
+			box-shadow: 0 4px 5px rgba(0, 0, 0, 0.05);
+			-webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.05);
+		}
+		#phone-bottom ul li:first-child ul {
+			left: 0;
+			-webkit-transform: translateX(10%);
+			transform: translateX(10%);
+			-ms-transform: translateX(10%);
+		}
+		#phone-bottom ul li:last-child ul {
+			left: 100%;
+			-webkit-transform: translateX(-110%);
+			transform: translateX(-110%);
+			-ms-transform: translateX(-110%);
+		}
+		.backdrop {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 998;
+			display: none;
+		}
+	</style>
+
+	<body>
+
+		<nav id="phone-bottom">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+					<ul>
+						<li>
+							<a href="#">11111</a>
+						</li>
+						<li>
+							<a href="#">2222</a>
+						</li>
+						<li>
+							<a href="#">333</a>
+						</li>
+						<li>
+							<a href="#">789666666666666</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Tel</a>
+				</li>
+				<li>
+					<a href="#">E-mail</a>
+					<ul>
+						<li>
+							<a href="#">8888</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Address</a>
+					<ul>
+						<li>
+							<a href="#">99999999999</a>
+						</li>
+						<li>
+							<a href="#">888</a>
+						</li>
+						<li>
+							<a href="#">77777</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="backdrop"></div>
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#phone-bottom>ul>li').on('click', function(event) {
+					event.stopPropagation();
+					event.preventDefault();
+					$(this).siblings().children('ul').fadeOut('fast');
+					$('.backdrop').hide();
+					if($(this).children('ul').length > 0) {
+						if ($(this).children('ul').css('display')=='none') {
+							$(this).children('ul').fadeIn('fast');
+							$('.backdrop').show().focus().one('click', function() {
+							$('#phone-bottom ul li ul,.backdrop').fadeOut('fast');
+						});
+						} else{
+							$(this).children('ul').fadeOut('fast');
+							$('.backdrop').hide();
+						}
+					} else {}
+				});
+			});
+		</script>
+	</body>
+
+</html>

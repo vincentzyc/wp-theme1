@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DIYTheme</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/theme-options.css" />
+		<link rel="stylesheet" href="css/redux-admin.css" />
+	</head>
+	<body>
+		<div class="wrap"><noscript>&lt;div class="no-js"&gt;警告！选项面板需要Javascript支持才能正常使用！&lt;/div&gt;</noscript><input type="hidden" id="ajaxsecurity" name="security" value="0ec57d50c2">
+			<div class="redux-container">
+				<form method="post" action="./options.php" data-nonce="0ec57d50c2" enctype="multipart/form-data" id="redux-form-wrapper">
+					<input type="hidden" id="redux-compiler-hook" name="theme_options[compiler]" value="">
+					<input type="hidden" id="currentSection" name="theme_options[redux-section]" value="0">
+					<input type="hidden" name="option_page" value="theme_options_group"><input type="hidden" name="action" value="update"><input type="hidden" id="_wpnonce" name="_wpnonce" value="28d8e88751"><input type="hidden" name="_wp_http_referer" value="/mywordpress/wp-admin/admin.php?page=_options"> <input type="hidden" id="last_tab" name="theme_options[last_tab]" value="">
+
+					<!-- Header Block -->
+					<div id="redux-header">
+						<div class="display_header">
+
+							<h2>Nirvana</h2>
+
+							<span>1.2.2</span>
+
+						</div>
+
+						<div class="clear"></div>
+					</div>
+					<!-- Intro Text -->
+
+					<!-- Stickybar -->
+					<div id="redux-sticky" class="">
+						<div id="info_bar">
+
+							<a href="javascript:void(0);" class="expand_options">扩展</a>
+
+							<div class="redux-action_bar">
+								<span class="spinner"></span>
+								<input type="submit" name="redux_save" id="redux_save" class="button button-primary" value="保存更改"> <input type="submit" name="theme_options[defaults-section]" id="theme_options[defaults-section]" class="button" value="重置此项"> <input type="submit" name="theme_options[defaults]" id="theme_options[defaults]" class="button" value="重置所有"> </div>
+							<div class="redux-ajax-loading" alt="进行中...">&nbsp;</div>
+							<div class="clear"></div>
+						</div>
+
+						<!-- Notification bar -->
+						<div id="redux_notification_bar">
+							<div class="redux-save-warn notice-yellow" style="left: 182.887px;"><strong>设置发生变化，请保存！</strong></div>
+							<div class="redux-field-errors notice-red"><strong><span></span> 存在若干错误！</strong></div>
+							<div class="redux-field-warnings notice-yellow"><strong><span></span> 存在若干警告！</strong></div>
+						</div>
+
+					</div>
+
+					<div class="redux-sidebar" style="margin-left: 0px;">
+						<ul class="redux-group-menu">
+							<li id="0_section_group_li" class="redux-group-tab-link-li active">
+								<a href="javascript:void(0);" id="0_section_group_li_a" class="redux-group-tab-link-a" data-key="0" data-rel="0"><i class="fa fa-cog"></i> <span class="group_title">通用</span></a>
+							</li>
+							<li id="1_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="1_section_group_li_a" class="redux-group-tab-link-a" data-key="1" data-rel="1"><i class="fa fa-desktop"></i> <span class="group_title">布局</span></a>
+							</li>
+							<li id="2_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="2_section_group_li_a" class="redux-group-tab-link-a" data-key="2" data-rel="2"><i class="fa fa-caret-square-o-up"></i> <span class="group_title">页眉</span></a>
+							</li>
+							<li id="3_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="3_section_group_li_a" class="redux-group-tab-link-a" data-key="3" data-rel="3"><i class="fa fa-caret-square-o-down"></i> <span class="group_title">页脚</span></a>
+							</li>
+							<li id="4_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="4_section_group_li_a" class="redux-group-tab-link-a" data-key="4" data-rel="4"><i class="fa fa-magic"></i> <span class="group_title">样式</span></a>
+							</li>
+							<li id="5_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="5_section_group_li_a" class="redux-group-tab-link-a" data-key="5" data-rel="5"><i class="fa fa-file-text-o"></i> <span class="group_title">博客</span></a>
+							</li>
+							<li id="6_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="6_section_group_li_a" class="redux-group-tab-link-a" data-key="6" data-rel="6"><i class="fa fa-search-plus"></i> <span class="group_title">SEO</span></a>
+							</li>
+							<li id="7_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="7_section_group_li_a" class="redux-group-tab-link-a" data-key="7" data-rel="7"><i class="fa fa-rocket"></i> <span class="group_title">侧边栏</span></a>
+							</li>
+							<li id="8_section_group_li" class="redux-group-tab-link-li hasSubSections empty_section">
+								<a href="javascript:void(0);" id="8_section_group_li_a" class="redux-group-tab-link-a" data-key="8" data-rel="8"><span class="extraIconSubsections"><i class="el el-chevron-down">&nbsp;</i></span><i class="fa fa-sitemap"></i> <span class="group_title">模块</span></a>
+								<ul id="8_section_group_li_subsections" class="subsection">
+									<li id="9_section_group_li" class="redux-group-tab-link-li  hasIcon">
+										<a href="javascript:void(0);" id="9_section_group_li_a" class="redux-group-tab-link-a" data-key="9" data-rel="9"><i class="fa fa-archive"></i> <span class="group_title">产品模块</span></a>
+									</li>
+									<li id="10_section_group_li" class="redux-group-tab-link-li  hasIcon">
+										<a href="javascript:void(0);" id="10_section_group_li_a" class="redux-group-tab-link-a" data-key="10" data-rel="10"><i class="fa fa-users"></i> <span class="group_title">员工模块</span></a>
+									</li>
+									<li id="11_section_group_li" class="redux-group-tab-link-li  hasIcon">
+										<a href="javascript:void(0);" id="11_section_group_li_a" class="redux-group-tab-link-a" data-key="11" data-rel="11"><i class="fa fa-question-circle"></i> <span class="group_title">问答模块</span></a>
+									</li>
+									<li id="12_section_group_li" class="redux-group-tab-link-li  hasIcon">
+										<a href="javascript:void(0);" id="12_section_group_li_a" class="redux-group-tab-link-a" data-key="12" data-rel="12"><i class="fa fa-user"></i> <span class="group_title">客户模块</span></a>
+									</li>
+								</ul>
+							</li>
+							<li id="13_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="13_section_group_li_a" class="redux-group-tab-link-a" data-key="13" data-rel="13"><i class="fa fa-code"></i> <span class="group_title">跟踪代码</span></a>
+							</li>
+							<li class="divide">&nbsp;</li>
+							<li id="15_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="15_section_group_li_a" class="redux-group-tab-link-a" data-key="15" data-rel="15"><i class="fa fa-truck"></i> <span class="group_title">导入&amp;导出</span></a>
+							</li>
+							<li class="divide">&nbsp;</li>
+							<li id="17_section_group_li" class="redux-group-tab-link-li">
+								<a href="javascript:void(0);" id="17_section_group_li_a" class="redux-group-tab-link-a" data-key="17" data-rel="17"><i class="fa fa-info-circle"></i> <span class="group_title">主题信息</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="redux-main" style="">
+						<div id="redux_ajax_overlay">&nbsp;</div>
+						<div id="0_section_group" class="redux-group-tab" data-rel="0" style="display: block;">
+							<h2>通用</h2>
+							<div class="redux-section-desc">主题基本设置项目.</div>
+							<table class="form-table">
+								<tbody>
+									<tr>
+										<th scope="row">
+											<div class="redux_field_th">导航菜单LOGO</div>
+										</th>
+										<td>
+											<fieldset id="theme_options-header-logo" class="redux-field-container redux-field redux-container-media" data-id="header-logo" data-type="media"><input placeholder="未选择媒体" type="text" class="hide upload regular-text " name="theme_options[header-logo][url]" id="theme_options[header-logo][url]" value="" readonly="readonly"><input type="hidden" class="data" data-mode="0"><input type="hidden" class="library-filter" data-lib-filter=""><input type="hidden" class="upload-id " name="theme_options[header-logo][id]" id="theme_options[header-logo][id]" value=""><input type="hidden" class="upload-height" name="theme_options[header-logo][height]" id="theme_options[header-logo][height]" value=""><input type="hidden" class="upload-width" name="theme_options[header-logo][width]" id="theme_options[header-logo][width]" value=""><input type="hidden" class="upload-thumbnail" name="theme_options[header-logo][thumbnail]" id="theme_options[header-logo][thumbnail]" value="">
+												<div class="hide screenshot">
+													<a class="of-uploaded-image" href="" target="_blank"><img class="redux-option-image" id="image_header-logo" src="" alt="" target="_blank" rel="external"></a>
+												</div>
+												<div class="upload_button_div"><span class="button media_upload_button" id="header-logo-media">上传</span><span class="button remove-image hide" id="reset_header-logo" rel="header-logo">删除</span></div>
+												<div class="description field-desc">上传一个PNG格式LOGO作为导航菜单的LOGO, 高度必须为50px,长度不超过120px. 推荐尺寸大小为:120x50.</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div class="redux_field_th">网站FAVICON图标</div>
+										</th>
+										<td>
+											<fieldset id="theme_options-favicon" class="redux-field-container redux-field redux-container-media" data-id="favicon" data-type="media"><input placeholder="未选择媒体" type="text" class="hide upload regular-text " name="theme_options[favicon][url]" id="theme_options[favicon][url]" value="" readonly="readonly"><input type="hidden" class="data" data-mode="0"><input type="hidden" class="library-filter" data-lib-filter=""><input type="hidden" class="upload-id " name="theme_options[favicon][id]" id="theme_options[favicon][id]" value=""><input type="hidden" class="upload-height" name="theme_options[favicon][height]" id="theme_options[favicon][height]" value=""><input type="hidden" class="upload-width" name="theme_options[favicon][width]" id="theme_options[favicon][width]" value=""><input type="hidden" class="upload-thumbnail" name="theme_options[favicon][thumbnail]" id="theme_options[favicon][thumbnail]" value="">
+												<div class="hide screenshot">
+													<a class="of-uploaded-image" href="" target="_blank"><img class="redux-option-image" id="image_favicon" src="" alt="" target="_blank" rel="external"></a>
+												</div>
+												<div class="upload_button_div"><span class="button media_upload_button" id="favicon-media">上传</span><span class="button remove-image hide" id="reset_favicon" rel="favicon">删除</span></div>
+												<div class="description field-desc">上传一个格式为ico后缀的图标文件, 尺寸为16x16</div>
+											</fieldset>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div id="1_section_group" class="redux-group-tab" data-rel="1" style="display: none;">
+							<h2>布局</h2>
+							<div class="redux-section-desc">网站整体布局设置项.</div>
+							<table class="form-table">
+								<tbody>
+									<tr>
+										<th scope="row">
+											<div class="redux_field_th">网站默认布局</div>
+										</th>
+										<td>
+											<fieldset id="theme_options-wrap-layout" class="redux-field-container redux-field redux-container-select" data-id="wrap-layout" data-type="select">
+												<div class="select2-container redux-select-item select2-allowclear" id="s2id_wrap-layout-select" style="width: 40%;">
+													<a href="javascript:void(0)" class="select2-choice" tabindex="-1"> <span class="select2-chosen" id="select2-chosen-1">全宽布局</span><abbr class="select2-search-choice-close"></abbr> <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen1" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1">
+													<div class="select2-drop select2-display-none select2-with-searchbox">
+														<div class="select2-search"> <label for="s2id_autogen1_search" class="select2-offscreen"></label> <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder=""> </div>
+														<ul class="select2-results" role="listbox" id="select2-results-1"> </ul>
+													</div>
+												</div>
+												<select id="wrap-layout-select" data-placeholder="选择产品" name="theme_options[wrap-layout]" class="redux-select-item " style="width: 40%; display: none;" rows="6" tabindex="-1" title="">
+													<option></option>
+													<option value="full-width" selected="selected">全宽布局</option>
+													<option value="boxed">窗口布局</option>
+												</select>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div class="redux_field_th">网站阴影效果</div>
+										</th>
+										<td>
+											<fieldset id="theme_options-wrap-shadow" class="redux-field-container redux-field redux-container-checkbox" data-id="wrap-shadow" data-type="checkbox">
+												<ul class="data-full">
+													<li><label for="theme_options_wrap-shadow"><input type="hidden" class="checkbox-check" data-val="1" name="theme_options[wrap-shadow]" value=""><input type="checkbox" id="theme_options_wrap-shadow" value="1" class="checkbox "></label></li>
+												</ul>
+												<div class="description field-desc">当使用窗口网站布局时, 可开启此选项来给网站边缘增加阴影悬浮效果.</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div class="redux_field_th">网站自适应</div>
+										</th>
+										<td>
+											<fieldset id="theme_options-responsive" class="redux-field-container redux-field redux-container-switch" data-id="responsive" data-type="switch">
+												<div class="switch-options"><label class="cb-enable selected" data-id="responsive"><span>开</span></label><label class="cb-disable" data-id="responsive"><span>关</span></label><input type="hidden" class="checkbox checkbox-input" id="responsive" name="theme_options[responsive]" value="1"></div>
+												<div class="description field-desc">是否开启网站自适应功能, 开启后在不同设备浏览网站时, 会根据设备分辨率不同自适应到最佳访问模式.</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div class="redux_field_th">网站内容页面最大宽度</div>
+										</th>
+										<td>
+											<fieldset id="theme_options-site-width" class="redux-field-container redux-field redux-field-init redux-container-text " data-id="site-width" data-type="text"><input type="text" id="site-width" name="theme_options[site-width]" value="1170" class="regular-text ">
+												<div class="description field-desc">可以自定义网站内容的最大宽度, 默认为1200. 不建议更改此项. 更改范围为1000-1200.</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr class="fold hide">
+										<th scope="row">
+											<div class="redux_field_th">网站上下边距</div>
+										</th>
+										<td>
+											<fieldset id="theme_options-site-margin" class="redux-field-container redux-field redux-field-init redux-container-spacing " data-id="site-margin" data-type="spacing"><input type="hidden" class="field-units" value="px"><input type="hidden" class="redux-spacing-value" id="site-margin-top" name="theme_options[site-margin][margin-top]" value="0"><input type="hidden" class="redux-spacing-value" id="site-margin-bottom" name="theme_options[site-margin][margin-bottom]" value="0">
+												<div class="field-spacing-input input-prepend"><span class="add-on"><i class="el el-arrow-up icon-large"></i></span><input type="text" class="redux-spacing-top redux-spacing-input mini" placeholder="顶部" rel="site-margin-top" value="0"></div>
+												<div class="field-spacing-input input-prepend"><span class="add-on"><i class="el el-arrow-down icon-large"></i></span><input type="text" class="redux-spacing-bottom redux-spacing-input mini" placeholder="底部" rel="site-margin-bottom" value="0"></div>
+												<div class="description field-desc">若网站采用窗口布局, 则建议可设置此项.</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div class="redux_field_th">网站背景</div>
+										</th>
+										<td>
+											<fieldset id="theme_options-body-bg" class="redux-field-container redux-field redux-container-background" data-id="body-bg" data-type="background">
+												<div class="wp-picker-container">
+													<a tabindex="0" class="wp-color-result" title="选择颜色" data-current="当前颜色" style="background-color: rgb(255, 255, 255);"></a><span class="wp-picker-input-wrap"><input data-id="body-bg" name="theme_options[body-bg][background-color]" id="body-bg-color" class="redux-color redux-background-input redux-color-init  wp-color-picker" type="text" value="#fff" data-default-color="#fff" style="display: none;"><input type="button" class="button button-small hidden wp-picker-default" value="默认"></span>
+													<div class="wp-picker-holder">
+														<div class="iris-picker iris-border" style="display: none; width: 255px; height: 202.125px; padding-bottom: 23.2209px;">
+															<div class="iris-picker-inner">
+																<div class="iris-square" style="width: 182.125px; height: 182.125px;">
+																	<a class="iris-square-value ui-draggable ui-draggable-handle" href="#" style="left: 0px; top: 0px;"><span class="iris-square-handle ui-slider-handle"></span></a>
+																	<div class="iris-square-inner iris-square-horiz" style="background-image: -webkit-linear-gradient(left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));"></div>
+																	<div class="iris-square-inner iris-square-vert" style="background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgb(0, 0, 0));"></div>
+																</div>
+																<div class="iris-slider iris-strip" style="height: 205.346px; width: 28.2px; background-image: -webkit-linear-gradient(top, rgb(255, 0, 0), rgb(255, 255, 255));">
+																	<div class="iris-slider-offset ui-slider ui-slider-vertical ui-widget ui-widget-content ui-corner-all"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="bottom: 0%;"></span></div>
+																</div>
+															</div>
+															<div class="iris-palette-container">
+																<a class="iris-palette" tabindex="0" style="background-color: rgb(0, 0, 0); height: 19.5784px; width: 19.5784px; margin-left: 0px;"></a>
+																<a class="iris-palette" tabindex="0" style="background-color: rgb(255, 255, 255); height: 19.5784px; width: 19.5784px; margin-left: 3.6425px;"></a>
+																<a class="iris-palette" tabindex="0" style="background-color: rgb(221, 51, 51); height: 19.5784px; width: 19.5784px; margin-left: 3.6425px;"></a>
+																<a class="iris-palette" tabindex="0" style="background-color: rgb(221, 153, 51); height: 19.5784px; width: 19.5784px; margin-left: 3.6425px;"></a>
+																<a class="iris-palette" tabindex="0" style="background-color: rgb(238, 238, 34); height: 19.5784px; width: 19.5784px; margin-left: 3.6425px;"></a>
+																<a class="iris-palette" tabindex="0" style="background-color: rgb(129, 215, 66); height: 19.5784px; width: 19.5784px; margin-left: 3.6425px;"></a>
+																<a class="iris-palette" tabindex="0" style="background-color: rgb(30, 115, 190); height: 19.5784px; width: 19.5784px; margin-left: 3.6425px;"></a>
+																<a class="iris-palette" tabindex="0" style="background-color: rgb(130, 36, 227); height: 19.5784px; width: 19.5784px; margin-left: 3.6425px;"></a>
+															</div>
+														</div>
+													</div>
+												</div><input type="hidden" class="redux-saved-color" id="body-bg-saved-color" value=""><label for="body-bg-transparency" class="color-transparency-check"><input type="checkbox" class="checkbox color-transparency redux-background-input " id="body-bg-transparency" data-id="body-bg-color" value="1"> 透明度</label><br>
+												<div class="select2-container redux-select-item redux-background-input redux-background-repeat" id="s2id_body-bg-repeat-select" style="width: 200px;">
+													<a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"> <span class="select2-chosen" id="select2-chosen-20">背景重复</span><abbr class="select2-search-choice-close"></abbr> <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen20" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-20" id="s2id_autogen20">
+													<div class="select2-drop select2-display-none select2-with-searchbox">
+														<div class="select2-search"> <label for="s2id_autogen20_search" class="select2-offscreen"></label> <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-20" id="s2id_autogen20_search" placeholder=""> </div>
+														<ul class="select2-results" role="listbox" id="select2-results-20"> </ul>
+													</div>
+												</div>
+												<select id="body-bg-repeat-select" data-placeholder="背景重复" name="theme_options[body-bg][background-repeat]" class="redux-select-item redux-background-input redux-background-repeat " tabindex="-1" title="" style="display: none;">
+													<option></option>
+													<option value="no-repeat">No Repeat</option>
+													<option value="repeat">Repeat All</option>
+													<option value="repeat-x">Repeat Horizontally</option>
+													<option value="repeat-y">Repeat Vertically</option>
+													<option value="inherit">Inherit</option>
+												</select>
+												<div class="select2-container redux-select-item redux-background-input redux-background-size" id="s2id_body-bg-repeat-select" style="width: 200px;">
+													<a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"> <span class="select2-chosen" id="select2-chosen-21">背景大小</span><abbr class="select2-search-choice-close"></abbr> <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen21" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-21" id="s2id_autogen21">
+													<div class="select2-drop select2-display-none select2-with-searchbox">
+														<div class="select2-search"> <label for="s2id_autogen21_search" class="select2-offscreen"></label> <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-21" id="s2id_autogen21_search" placeholder=""> </div>
+														<ul class="select2-results" role="listbox" id="select2-results-21"> </ul>
+													</div>
+												</div>
+												<select id="body-bg-repeat-select" data-placeholder="背景大小" name="theme_options[body-bg][background-size]" class="redux-select-item redux-background-input redux-background-size " tabindex="-1" title="" style="display: none;">
+													<option></option>
+													<option value="inherit">Inherit</option>
+													<option value="cover">Cover</option>
+													<option value="contain">Contain</option>
+												</select>
+												<div class="select2-container redux-select-item redux-background-input redux-background-attachment" id="s2id_body-bg-attachment-select" style="width: 200px;">
+													<a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"> <span class="select2-chosen" id="select2-chosen-22">背景附件</span><abbr class="select2-search-choice-close"></abbr> <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen22" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-22" id="s2id_autogen22">
+													<div class="select2-drop select2-display-none select2-with-searchbox">
+														<div class="select2-search"> <label for="s2id_autogen22_search" class="select2-offscreen"></label> <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-22" id="s2id_autogen22_search" placeholder=""> </div>
+														<ul class="select2-results" role="listbox" id="select2-results-22"> </ul>
+													</div>
+												</div>
+												<select id="body-bg-attachment-select" data-placeholder="背景附件" name="theme_options[body-bg][background-attachment]" class="redux-select-item redux-background-input redux-background-attachment " tabindex="-1" title="" style="display: none;">
+													<option></option>
+													<option value="fixed">Fixed</option>
+													<option value="scroll">Scroll</option>
+													<option value="inherit">Inherit</option>
+												</select>
+												<div class="select2-container redux-select-item redux-background-input redux-background-position" id="s2id_body-bg-position-select" style="width: 200px;">
+													<a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"> <span class="select2-chosen" id="select2-chosen-23">背景位置</span><abbr class="select2-search-choice-close"></abbr> <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen23" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-23" id="s2id_autogen23">
+													<div class="select2-drop select2-display-none select2-with-searchbox">
+														<div class="select2-search"> <label for="s2id_autogen23_search" class="select2-offscreen"></label> <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-23" id="s2id_autogen23_search" placeholder=""> </div>
+														<ul class="select2-results" role="listbox" id="select2-results-23"> </ul>
+													</div>
+												</div>
+												<select id="body-bg-position-select" data-placeholder="背景位置" name="theme_options[body-bg][background-position]" class="redux-select-item redux-background-input redux-background-position " tabindex="-1" title="" style="display: none;">
+													<option></option>
+													<option value="left top">Left Top</option>
+													<option value="left center">Left center</option>
+													<option value="left bottom">Left Bottom</option>
+													<option value="center top">Center Top</option>
+													<option value="center center">Center Center</option>
+													<option value="center bottom">Center Bottom</option>
+													<option value="right top">Right Top</option>
+													<option value="right center">Right center</option>
+													<option value="right bottom">Right Bottom</option>
+												</select><br><input placeholder="未选择媒体" type="text" class="redux-background-input upload  noPreview" name="theme_options[body-bg][background-image]" id="theme_options[body-bg][background-image]" value=""><input type="hidden" class="upload-id  noPreview" name="theme_options[body-bg][media][id]" id="theme_options[body-bg][media][id]" value=""><input type="hidden" class="upload-height" name="theme_options[body-bg][media][height]" id="theme_options[body-bg][media][height]" value=""><input type="hidden" class="upload-width" name="theme_options[body-bg][media][width]" id="theme_options[body-bg][media][width]" value=""><input type="hidden" class="upload-thumbnail" name="theme_options[body-bg][media][thumbnail]" id="theme_options[body-bg][media][thumbnail]" value="">
+												<div class="hide screenshot">
+													<a class="of-uploaded-image" href="" target="_blank"><img class="redux-option-image" id="image_" src="" alt="" target="_blank" rel="external"></a>
+												</div>
+												<div class="upload_button_div"><span class="button redux-background-upload" id="body-bg-media">上传</span><span class="button removeCSS redux-remove-background hide" id="reset_body-bg" rel="body-bg">删除</span></div>
+												<p class="clear body-bg_previewer background-preview" style="display:none;height: 200px;">&nbsp;</p>
+												<div class="description field-desc">若网站开启了窗口布局，则建议设置一个网站背景.</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div class="redux_field_th">回到顶部按钮</div>
+										</th>
+										<td>
+											<fieldset id="theme_options-back-to-top" class="redux-field-container redux-field redux-container-switch" data-id="back-to-top" data-type="switch">
+												<div class="switch-options"><label class="cb-enable" data-id="back-to-top"><span>开</span></label><label class="cb-disable selected" data-id="back-to-top"><span>关</span></label><input type="hidden" class="checkbox checkbox-input" id="back-to-top" name="theme_options[back-to-top]" value="0"></div>
+												<div class="description field-desc">是否开启回到顶部按钮功能, 开启后在页面右下角会出现一个向上的图标.</div>
+											</fieldset>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+					<div class="clear"></div>
+
+					<!-- Footer Block -->
+					<div id="redux-sticky-padder" style="height: 28.0943px; display: none;">&nbsp;</div>
+					<div id="redux-footer-sticky">
+						<div id="redux-footer" style="background: rgb(238, 238, 238); position: inherit; bottom: inherit; width: inherit;" class="">
+
+							<div class="redux-action_bar">
+								<span class="spinner"></span>
+								<input type="submit" name="redux_save" id="redux_save" class="button button-primary" value="保存更改">
+								<input type="submit" name="theme_options[defaults-section]" id="theme_options[defaults-section]" class="button" value="重置此项"> <input type="submit" name="theme_options[defaults]" id="theme_options[defaults]" class="button" value="重置所有">
+							</div>
+
+							<div class="redux-ajax-loading" alt="进行中...">&nbsp;</div>
+							<div class="clear"></div>
+
+						</div>
+					</div>
+
+				</form>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

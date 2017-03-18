@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>singleproduct</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/singleProduct.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body>
+		<header id="header"></header>
+		<!--singleproduct内容-->
+		<div id="singleproduct">
+			<div class="htitle">
+				<div class="container">
+					<h1>CATEGORIES</h1>
+					<ol class="breadcrumb pull-right">
+						<li>
+							<a href="#">CATEGORIES1</a>
+						</li>
+						<li>
+							<a href="#">CATEGORIES2</a>
+						</li>
+						<li class="active">CATEGORIES3</li>
+					</ol>
+				</div>
+			</div>
+			<div class="container diycontent">
+				<div class="row">
+					<div class="col-md-3 diysidebar">
+						<div class="sidebar">
+							<h4>PRODUCT BY CATEGORIES</h4>
+							<ul>
+								<li class="active">
+									<a href="#">111</a>
+								</li>
+								<li>
+									<a href="#">222China’s foreign tradeChina’s foreign tradeChina’s foreign trade</a>
+									<ul>
+										<li>
+											<a href="#">666</a>
+										</li>
+										<li>
+											<a href="#">777</a>
+											<ul>
+												<li>
+													<a href="#">888</a>
+												</li>
+												<li>
+													<a href="#">999</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">333</a>
+								</li>
+								<li>
+									<a href="#">444</a>
+								</li>
+								<li>
+									<a href="#">555</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-9 col-sm-12 single-product">
+						<div class="row productMeta">
+							<h2 class="single-title">Newest Brand i68 Touch screen</h2>
+							<div class="col-sm-6 col-xs-12 productview">
+								<div class="imgbox">
+									<div class="probox">
+										<img class="productimg" src="img/about-us.jpg" alt="" />
+										<div class="hoverbox"></div>
+									</div>
+									<div class="showbox">
+										<img class="productimg" src="img/about-us.jpg" alt="" />
+									</div>
+								</div>
+								<div class="thumbimg">
+									<div id="thumblist">
+										<div class="itemroll active">
+											<img src="img/about-us.jpg" />
+										</div>
+										<div class="itemroll">
+											<img src="img/DSC03846-1-1.jpg" />
+										</div>
+										<div class="itemroll">
+											<img src="img/banner.jpg" />
+										</div>
+										<div class="itemroll">
+											<img src="img/ipad300x300.jpg" />
+										</div>
+									</div>
+									<a class="carousel-control left prev">&lsaquo;</a>
+									<a class="carousel-control right next">&rsaquo;</a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-12 product-meta">
+								<p>
+									Apple’s 9.7-inch iPad Pro is a familiar and excellent product. While a smaller version of the large12.9-inch iPad Pro Apple just launched last fall may seem like a quick solution to iPad sales problems (it more or less peaked in 2014 and has been flat-to-falling ever since), it would be foolish to think that the company developed the 9.7 edition quickly. It’s safe to assume that it was on the drawing board when Apple was developing the first iPad Pro.
+								</p>
+								<!--<p><span class="col-xs-6">Display Size:</span>4 inches</p>
+								<p><span class="col-xs-6">Operating System: </span>ios</p>
+								<p><span class="col-xs-6">Battery Life:</span>information not provided</p>
+								<p><span class="col-xs-6">Dimensions:</span>4.5 x 0.4 x 2.3 inches</p>
+								<p><span class="col-xs-6">Shipping Weight:</span> 6.4 ounces</p>
+								<p><span class="col-xs-6">Secondary：</span>1.2MP FaceTime Camera</p>
+								<p><span class="col-xs-6">Display Size:</span>4 inches</p>
+								<p><span class="col-xs-6">Operating System: </span>ios</p>
+								<p><span class="col-xs-6">Battery Life:</span>information not provided</p>
+								<p><span class="col-xs-6">Dimensions:</span>4.5 x 0.4 x 2.3 inches</p>-->
+								<a id="myDialog" class="product-inquiry">Inquiry Now</a>
+								<div id="contact_form_pop" style="display: none;">
+									<?php
+            							$short = '[contact-form-7 id="{'.$data['id'].'}" title="'.$data['title'].'"]';
+            							echo do_shortcode($short);
+        							?>
+								</div>
+								<a class="product-inquiry" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1393301558&amp;site=wpyou.com&amp;menu=yes">Chat Now</a>
+							</div>
+						</div>
+						<div class="productinfo">
+							<ul class="nav nav-tabs nav-justified">
+								<li class="active">
+									<a onclick="changeTab(this)">
+										<h4>Messages</h4></a>
+								</li>
+								<li>
+									<a onclick="changeTab(this)">
+										<h4>Order Confirmation</h4></a>
+								</li>
+								<li>
+									<a onclick="changeTab(this)">
+										<h4>Payment</h4></a>
+								</li>
+								<li>
+									<a onclick="changeTab(this)">
+										<h4>Shipping</h4></a>
+								</li>
+							</ul>
+							<div class="product-tabs">
+								<div class="product-describe">
+									<h2 class="product-describe-title">Messages</h2>
+									<img src="http://gtms03.alicdn.com/tps/i3/TB1DQmqLpXXXXa5XXXXetiu_VXX-770-453.png" />
+									<h4>Your one-stop communication tool!</h4>
+									<p>Apple’s 9.7-inch iPad Pro is a familiar and excellent product. While a smaller version of the large12.9-inch iPad Pro Apple just launched last fall may seem like a quick solution to iPad sales problems (it more or less peaked in 2014 and has been flat-to-falling ever since), it would be foolish to think that the company developed the 9.7 edition quickly. It’s safe to assume that it was on the drawing board when Apple was developing the first iPad Pro.</p>
+								</div>
+								<div class="product-describe">
+									<h2 class="product-describe-title">Order Confirmation</h2>
+									<img src="http://img.alicdn.com/tps/TB1_6qeLpXXXXb8XXXXXXXXXXXX-770-453.png" />
+									<h4>Confirm your orders with confidence!</h4>
+									<p>iOS 9 is the world’s most advanced, intuitive, and secure mobile operating system. From powerful multitasking features to Night Shift and News, iOS 9 is designed to help you get the most out of iPad.</p>
+								</div>
+								<div class="product-describe">
+									<h2 class="product-describe-title">Payment</h2>
+									<img src="http://gtms03.alicdn.com/tps/i3/TB1DQmqLpXXXXa5XXXXetiu_VXX-770-453.png" />
+									<h4>To get full payment protection</h4>
+									<p>Great ways to expand what’s possible with iPad Pro. You can get even more creative and productive with accessories designed especially for the scale, capabilities, and power of iPad Pro. Explore the range of covers, keyboards, and more.</p>
+								</div>
+								<div class="product-describe">
+									<h2 class="product-describe-title">Shipping</h2>
+									<img src="http://img.alicdn.com/tps/TB1_6qeLpXXXXb8XXXXXXXXXXXX-770-453.png" />
+									<h4>Never miss an update!</h4>
+									<p>Wi-Fi and LTEFast wireless connectivity.iPad Pro can connect to the fastest Wi-Fi or cellular networks so you can surf the web, stream movies and share documents from </p>
+								</div>
+							</div>
+						</div>
+						<div class="post-prev-next">
+							<strong>PREV</strong>：
+							<a href="#" rel="prev">China’s foreign trade may fluctuate in Q1</a><br>
+							<strong>NEXT</strong>：
+							<a href="#" rel="next">First subway line to run under Yellow River</a>
+						</div>
+						<div class="related-product">
+							<h3>RELATED PRODUCTS</h3>
+							<div class="col-sm-3 col-xs-6 related-item">
+								<a href="javascript:">
+									<img src="img/0009450G9.jpg" alt="" />
+									<h5>Smart Bluetooth Bracelet for iPhone Samsung Android</h5>
+								</a>
+							</div>
+							<div class="col-sm-3 col-xs-6 related-item">
+								<a href="javascript:">
+									<img src="img/about-us.jpg" alt="" />
+									<h5>Apple Earnings Crush Estimates, Stock SoarsApple Earnings Crush Estimates, Stock SoarsApple Earnings Crush Estimates, Stock SoarsApple Earnings Crush Estimates, Stock Soars</h5>
+								</a>
+							</div>
+							<div class="col-sm-3 col-xs-6 related-item">
+								<a href="javascript:">
+									<img src="img/DSC03846-1-1.jpg" alt="" />
+									<h5>ipal</h5>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--singleproduct内容end-->
+		<footer id="footer"></footer>
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+//				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+
+				hwEqual('.probox>img');
+				hwEqual('.related-item img');
+
+				$(window).width() >= 768 ? bigimg.Zoomhover($(".probox img"), $(".hoverbox"), $(".showbox img")) : '';
+
+				//鼠标滑过事件
+				$('.diycontent .sidebar ul li').hover(function(event) {
+					event.stopPropagation();
+					$(this).children('ul:first').slideDown(200);
+				}, function() {
+					$(this).children('ul:first').slideUp(50);
+				});
+
+				//导航加右箭头
+				$('.diycontent .sidebar ul li').each(function() {
+					$('ul', this).length >= 1 ? $('a:first', this).append("<span>&rsaquo;</span>") : '';
+				});
+
+				$("#thumblist").parallelRoll({
+					boxName: '.thumbimg',
+					direction: 'none'
+				});
+
+				$('#thumblist .itemroll>img').on('click', function(event) {
+					event.stopPropagation();
+					$('.productimg').attr('src', $(this).attr('src'));
+					$(this).parent().siblings().removeClass('active');
+					$(this).parent().addClass('active');
+				});
+
+				jQuery('#myDialog').on("click", function() {
+					var contact = jQuery('#contact_form_pop').html();
+					jQuery('body').append('<div class="myBackdrop"></div>');
+					var newHtml = '';
+					newHtml += '<div id="newDialog" style="display: none;">' + contact + '</div>';
+					jQuery('body').append(newHtml);
+					jQuery('#newDialog').fadeIn();
+					jQuery('.myBackdrop').on('click', function() {
+						jQuery('.myBackdrop,#newDialog').fadeOut();
+					});
+				});
+
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>product</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/product.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body>
+		<header id="header"></header>
+		<!--blog内容-->
+		<div id="product">
+			<div class="htitle">
+				<div class="container">
+					<h1>PRODUCT</h1>
+					<ol class="breadcrumb pull-right">
+						<li>
+							<a href="#">CATEGORIES1</a>
+						</li>
+						<li>
+							<a href="#">CATEGORIES2</a>
+						</li>
+						<li class="active">CATEGORIES3</li>
+					</ol>
+				</div>
+			</div>
+			<div class="container diycontent">
+				<div class="row">
+					<div class="col-md-3 diysidebar">
+						<h4>PRODUCT BY CATEGORIES</h4>
+						<div class="sidebar">
+							<ul>
+								<li class="active">
+									<a href="#">111</a>
+								</li>
+								<li>
+									<a href="#">222China’s foreign tradeChina’s foreign tradeChina’s foreign trade</a>
+									<ul>
+										<li>
+											<a href="#">666</a>
+										</li>
+										<li>
+											<a href="#">777</a>
+											<ul>
+												<li>
+													<a href="#">888</a>
+												</li>
+												<li>
+													<a href="#">999</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">333</a>
+								</li>
+								<li>
+									<a href="#">444</a>
+								</li>
+								<li>
+									<a href="#">555</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-9 col-sm-12 ">
+						<div class="row productContent">
+							<div class="productgrid">
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="grid-item">
+										<a><img src="img/ipad300x300.jpg" /></a>
+										<h5><a href="singleProduct.html">Apple’s 9.7-inch iPad Pro White 128G</a></h5>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="grid-item">
+										<a><img src="img/0009450G9.jpg" /></a>
+										<h5><a>Smart Bluetooth Bracelet for iPhone Samsung Android</a></h5>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="grid-item">
+										<a><img src="img/0009450G9.jpg" /></a>
+										<h5><a>Smart Bluetooth Bracelet for iPhone Samsung Android</a></h5>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="grid-item">
+										<a><img src="img/0009450G9.jpg" /></a>
+										<h5><a>Smart Bluetooth Bracelet for iPhone Samsung Android</a></h5>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="grid-item">
+										<a><img src="img/ipad300x300.jpg" /></a>
+										<h5><a>Apple’s 9.7-inch iPad Pro White 128G</a></h5>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="grid-item">
+										<a><img src="img/ipad300x300.jpg" /></a>
+										<h5><a>Apple’s 9.7-inch iPad Pro White 128G</a></h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<ul class="pagination">
+								<li>
+									<a href="#">&laquo;</a>
+								</li>
+								<li class="active">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">&raquo;</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--blog内容end-->
+		<footer id="footer"></footer>
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+
+				//鼠标滑过事件
+				$('.diycontent .sidebar ul li').hover(function(event) {
+					event.stopPropagation();
+					$(this).children('ul:first').slideDown(200);
+				}, function() {
+					$(this).children('ul:first').slideUp(50);
+				});
+
+				//导航加右箭头
+				$('.diycontent .sidebar ul li').each(function() {
+					$('ul', this).length >= 1 ? $('a:first', this).append("<span>&rsaquo;</span>") : '';
+				});
+
+				allAnimation.Animation('.grid-item','fadeUp');
+			});
+		</script>
+	</body>
+</html>

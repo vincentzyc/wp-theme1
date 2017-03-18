@@ -1,0 +1,18 @@
+#blog img{
+	width: 100%;
+}
+#blog .cur-title {
+    margin-bottom: 10px;
+    line-height: 39px;
+    font-size: 18px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #666;
+    text-indent: 25px;
+    overflow: hidden;
+    background: url(../img/icon-arrow.gif) no-repeat 12px -64px;
+}
+#blog .blogcontent .blog-body {
+	margin: 20px 0;
+	border-bottom: 1px solid #E9E9E9;
+}
+

@@ -1,0 +1,18 @@
+#blog .recentcomments{
+	padding-bottom: 30px;
+	border-bottom: 1px solid #E9E9E9;
+}
+#blog .recentcomments>.media{
+	padding: 10px;
+	border: 1px solid #E9E9E9;
+}
+#blog .recentcomments>.media .media{
+	margin: 10px -10px 0 15px;
+	padding: 10px;
+	border: 1px solid #E9E9E9;
+	border-right: none;
+}
+#blog .recentcomments .media img{
+	width: 60px;
+	height: 60px;
+}

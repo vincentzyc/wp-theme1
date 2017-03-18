@@ -1,0 +1,186 @@
+<!--头部-->
+<header>
+	<!--顶部信息-->
+	<div class="rowtop">
+		<div class="container">
+			<span class="pull-left">Custom website's description</span>
+			<span class="pull-right">
+						<li><a href="#">Selection</a></li>
+						<li><a href="#">Request for Quotation</a></li>
+						<li><a href="#">Wholesaler</a></li>
+					</span>
+		</div>
+	</div>
+	<!--导航条主菜单-->
+	<div class="issticky">
+		<div class="hsticky">
+			<div class="container">
+				<div class="row rowmain text-left">
+					<a href="index.html"><img src="img/logo.png" /></a>
+					<div class="pull-right main-menu">
+						<div class="phoneview">
+							<span class="glyphicon glyphicon-th-list" data-toggle="collapse" data-target="#mainlist"></span>
+							<span class="glyphicon glyphicon-search" data-toggle="collapse" data-target="#search"></span>
+						</div>
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="index.html">HOME</a>
+							</li>
+							<li>
+								<a href="product.html">PRODUCT</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">jmeter</a>
+									</li>
+									<li>
+										<a href="#">EJBJasper</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#">jmeter</a>
+											</li>
+											<li>
+												<a href="#">EJB</a>
+											</li>
+											<li>
+												<a href="#">Jasper Report</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Jasper Report</a>
+									</li>
+									<li>
+										<a href="#">Jasper Report</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">SHOP</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">jmeter</a>
+									</li>
+									<li>
+										<a href="#">EJB</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="blog.html">BLOG</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">jmeter</a>
+									</li>
+									<li>
+										<a href="#">EJB</a>
+									</li>
+									<li>
+										<a href="#">Jasper Report</a>
+									</li>
+									<li>
+										<a href="#">EJB</a>
+									</li>
+									<li>
+										<a href="#">Jasper Report</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<a href="javascript:void(0);" data-toggle="collapse" data-target="#search"><span class="glyphicon glyphicon-search"></span></a>
+					</div>
+				</div>
+			</div>
+			<!--小屏显示导航菜单-->
+			<div class="collapse" id="mainlist">
+				<ul class="mymnav">
+					<li>
+						<a href="index.html">HOME</a>
+						<ul class="mymnav">
+							<li>
+								<a>1HOME1</a>
+							</li>
+							<li>
+								<a>1HOME2</a>
+							</li>
+							<li>
+								<a>1HOME3</a>
+								<ul class="mymnav">
+									<li>
+										<a>2HOME1</a>
+									</li>
+									<li>
+										<a>2HOME2</a>
+									</li>
+									<li>
+										<a>2HOME3</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="product.html">PRODUCT</a>
+						<ul class="mymnav">
+							<li>
+								<a href="#">jmeter</a>
+							</li>
+							<li>
+								<a href="#">EJBJasper</a>
+							</li>
+							<li>
+								<a href="#">Jasper Report</a>
+							</li>
+							<li>
+								<a href="#">Jasper ReportJasper</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="blog.html">BLOG</a>
+						<ul class="mymnav">
+							<li>
+								<a href="#">jmeter</a>
+							</li>
+							<li>
+								<a href="#">EJB</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--搜索框-->
+			<div id="search" class="collapse search">
+				<div class="input-group container input-group-lg">
+					<input type="text" class="form-control" placeholder="Search for...">
+					<span class="input-group-btn"><button class="btn btn-bg" type="button">Go!</button></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!--头部end-->
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		//固定导航条
+		$(document).scrollTop() >= 150 ? $('.hsticky').addClass('header-fixed') : $('.hsticky').removeClass('header-fixed');
+		$(window).scroll(function() {
+			$(document).scrollTop() >= 150 ? $('.hsticky').addClass('header-fixed') : $('.hsticky').removeClass('header-fixed');
+		});
+
+		//鼠标导航菜单滑过事件
+		$('header .rowmain ul.navbar-nav li').hover(function(event) {
+			event.stopPropagation();
+			$(this).children('ul:first').slideDown(200);
+		}, function() {
+			$(this).children('ul:first').slideUp(50);
+		});
+
+		//头部导航加右箭头
+		$('header .rowmain ul.dropdown-menu li').each(function() {
+			$('ul', this).length >= 1 ? $('a:first', this).append("<span>&rsaquo;</span>") : '';
+		});
+		$('header #mainlist ul.mymnav li').each(function() {
+			$('ul', this).length >= 1 ? $('a:first', this).append("<span onclick='showmsubmenu(this,event)'>+</span>") : '';
+		});
+	});
+</script>
