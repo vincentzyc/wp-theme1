@@ -107,7 +107,6 @@ function showmsubmenu(This, event) {
 		var flag = true; // 防止用户快速多次点击上下按钮
 		var arr = new Array();
 		var item_w = $(opts.itemName).outerWidth(true);//计算元素的宽度  包括补白+边框
-		console.log(item_w);
 		var box_w = $(opts.boxName).outerWidth();
 
 		//只有当  滚动层盒子宽度 大于 最外层盒子宽度 时才加载事件,否则不加载

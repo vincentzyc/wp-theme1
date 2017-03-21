@@ -29,7 +29,6 @@ button,button:focus {
 	border-color: #FF6A00;
 	box-shadow: 0 0 5px rgba(255, 106, 0, 0.4);
 }
-/*header   index*/
 .btn-bg{
 	background: #FF6A00;
 	color: #EEEEEE;
@@ -37,7 +36,6 @@ button,button:focus {
 .btn-bg:hover{
 	color: #FFFFFF;
 }
-/*index blog singleblog*/
 .more {
 	color: #FF6A00;
 	line-height: 33px;
@@ -45,7 +43,36 @@ button,button:focus {
 	font-weight: normal;
 	animation: fadeRight 2s;
 }
-/*product blog*/
+.diyshare_holder>a{
+	padding: 5px 0;
+	color: #FFFFFF;
+	background: #BBBBBB;
+	transition: all .2s;
+}
+.diyshare_holder>a:hover{
+	text-decoration: none;
+	transform: scale(1.2);
+	background: #FF6A00;
+}
+.diycategories_holder>a{
+	margin-right: 10px;
+}
+.diyshare_holder .diyshare,.diycategories_holder .diycategories{
+	position: relative;
+	overflow: hidden;
+	font-size: 16px;
+	margin: 5px 0;
+}
+.diyshare_holder .diyshare:after,.diycategories_holder .diycategories:after{
+	border-style: solid;
+    border-width: 1px 0 0 0;
+    content: "";
+    margin-left: 10px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    border-color: #E3E3E3;
+}
 .pagination>li>a{
     color: #FF6A00;
 }

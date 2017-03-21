@@ -40,7 +40,7 @@ header .container .main-menu .phoneview span:first-child {
 	margin-right:0;
 }
 /*手机端图标边距优化end*/
-@media (min-width: 769px) {
+@media (min-width: 992px) {
 	header .container .main-menu ul,header .container .main-menu>a,header .rowtop .container span{
 		display:block;
 	}

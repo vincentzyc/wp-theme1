@@ -93,6 +93,19 @@
 .productinfo {
 	margin-top: 30px;
 }
+.productinfo ul.nav-tabs{
+	border-bottom: 1px #D5D5D5 solid;
+}
+.productinfo ul.nav-tabs>li{
+	width: 25%;
+	float: left;
+}
+.productinfo ul.nav-tabs li>a{
+	border-bottom: none;
+}
+.productinfo ul.nav-tabs>.active>a{
+	margin-bottom: -1px;
+}
 .productinfo .product-tabs {
 	margin: 20px 0;
 }
