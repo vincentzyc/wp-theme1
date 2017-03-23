@@ -81,7 +81,7 @@
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-6">
 						<div class="grid-item">
-							<a><img src="img/0009450G9.jpg" /></a>
+							<a><img src="img/about-us.jpg" /></a>
 							<h5><a>Smart Bluetooth Bracelet for iPhone Samsung Android</a></h5>
 						</div>
 					</div>
@@ -434,6 +434,11 @@
 				$("#roll").parallelRoll();
 				//首页轮播
 				$('#myCarousel').carousel();
+
+				hwEqual('.grid-item img');
+				$(window).resize(function() {
+					hwEqual('.grid-item img');
+				});
 			});
 		</script>
 	</body>

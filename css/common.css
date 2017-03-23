@@ -43,16 +43,20 @@ button,button:focus {
 	font-weight: normal;
 	animation: fadeRight 2s;
 }
-.diyshare_holder>a{
+.diyshare_holder a.fa{
+	margin-right: 5px;
 	padding: 5px 0;
 	color: #FFFFFF;
 	background: #BBBBBB;
 	transition: all .2s;
 }
-.diyshare_holder>a:hover{
+.diyshare_holder a.fa:hover{
 	text-decoration: none;
 	transform: scale(1.2);
 	background: #FF6A00;
+}
+.diyshare_holder ul li{
+	line-height: 36px;
 }
 .diycategories_holder>a{
 	margin-right: 10px;
