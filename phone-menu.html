@@ -51,13 +51,13 @@
 			width: 100%;
 			text-align: center;
 		}
-		#phone-bottom ul li a:active{
+		#phone-bottom ul li a:active {
 			background-color: #eee;
 		}
 		#phone-bottom ul li:last-child, #phone-bottom ul li ul li {
 			border-right: none;
 		}
-		#phone-bottom ul li ul li{
+		#phone-bottom ul li ul li {
 			border-bottom: 1px #e3e3e3 solid;
 		}
 		#phone-bottom ul li ul {
@@ -92,6 +92,7 @@
 			left: 0;
 			z-index: 998;
 			display: none;
+			background: rgba(0, 0, 0, .3);
 		}
 	</style>
 
@@ -100,46 +101,18 @@
 		<nav id="phone-bottom">
 			<ul>
 				<li>
-					<a href="#">Home</a>
-					<ul>
-						<li>
-							<a href="#">11111</a>
-						</li>
-						<li>
-							<a href="#">2222</a>
-						</li>
-						<li>
-							<a href="#">333</a>
-						</li>
-						<li>
-							<a href="#">789666666666666</a>
-						</li>
-					</ul>
+					<a href="http://www.baidu.com">Home</a>
+
 				</li>
 				<li>
-					<a href="#">Tel</a>
+					<a href="http://www.baidu.com">Tel</a>
 				</li>
 				<li>
 					<a href="#">E-mail</a>
-					<ul>
-						<li>
-							<a href="#">8888</a>
-						</li>
-					</ul>
+
 				</li>
 				<li>
 					<a href="#">Address</a>
-					<ul>
-						<li>
-							<a href="#">99999999999</a>
-						</li>
-						<li>
-							<a href="#">888</a>
-						</li>
-						<li>
-							<a href="#">77777</a>
-						</li>
-					</ul>
 				</li>
 			</ul>
 		</nav>
@@ -150,20 +123,24 @@
 			$(function() {
 				$('#phone-bottom>ul>li').on('click', function(event) {
 					event.stopPropagation();
-					event.preventDefault();
 					$(this).siblings().children('ul').fadeOut('fast');
 					$('.backdrop').hide();
 					if($(this).children('ul').length > 0) {
-						if ($(this).children('ul').css('display')=='none') {
+						event.preventDefault();
+						if($(this).children('ul').css('display') == 'none') {
 							$(this).children('ul').fadeIn('fast');
 							$('.backdrop').show().focus().one('click', function() {
-							$('#phone-bottom ul li ul,.backdrop').fadeOut('fast');
-						});
-						} else{
+								$('#phone-bottom ul li ul,.backdrop').fadeOut('fast');
+							});
+						} else {
 							$(this).children('ul').fadeOut('fast');
 							$('.backdrop').hide();
 						}
 					} else {}
+				});
+				$('#phone-bottom>ul>li ul li').on('click', function(event) {
+					event.stopPropagation();
+					$('#phone-bottom ul li ul,.backdrop').fadeOut('fast');
 				});
 			});
 		</script>
