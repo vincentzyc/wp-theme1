@@ -120,14 +120,14 @@
 		//返回顶部
 		$(window).scroll(function() {
 			var sTop = $(document).scrollTop();
-			if(sTop > 200) {
+			if (sTop > 200) {
 				$('.backToTop').fadeIn();
 			} else {
 				$('.backToTop').fadeOut();
 			}
 		});
 		$('.backToTop').on('click', function() {
-			$('body').animate({ scrollTop: 0 }, 300);
+			$('html,body').animate({ scrollTop: 0 }, 300);
 		});
 	});
 </script>
